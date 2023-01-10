@@ -112,11 +112,22 @@ nav a {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin: 0 10%;
+  margin: 0 10% 5rem 10%;
   padding: 5%;
   box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
   -webkit-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+.back-button,.page-not-found-link {
+  align-self: flex-start;
+  background: transparent;
+  border: none;
+  color: var(--witting-blue);
+  font-family: var(--font-heading),sans-serif;
+  font-size: medium;
+  margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 .location-heading {
@@ -140,6 +151,7 @@ nav a {
 .aqi-quality {
   font-family: var(--font-heading);
   font-size: 1.2rem;
+  color: var(--witting-blue);
 }
 
 table {
@@ -177,7 +189,11 @@ th,tbody tr:nth-child(even) {
 -moz-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
 }
 
+.page-not-found-heading {
+  color: var(--witting-blue);
+  margin-bottom: 1rem;
+}
+
 .page-not-found-link {
-  align-self: flex-start;
   margin-bottom: 3rem;
 }

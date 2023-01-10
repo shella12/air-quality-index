@@ -1,7 +1,7 @@
 import './App.css';
 import { Link, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
-import AqiDetail from './pages/AqiDetail';
+import AqiDetail from './components/AqiDetail';
 import PageNotFound from './pages/PageNotFound';
 import logoIcon from './assets/logoIcon.png';
 
