@@ -197,3 +197,41 @@ th,tbody tr:nth-child(even) {
 .page-not-found-link {
   margin-bottom: 3rem;
 }
+
+.cities {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10% 5rem 10%;
+  padding: 5%;
+  box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  margin-top: 2rem;
+  color: var(--witting-blue);
+}
+
+.pagination li {
+  border: 1px solid var(--witting-blue);
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+}
+
+.city-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);;
+  gap: 0.5rem;
+}
+
+.city-list li {
+  color: var(--witting-blue);
+  list-style: circle ;
+}
+.city-list a {
+  color: var(--witting-blue);
+  text-decoration: underline;
+}

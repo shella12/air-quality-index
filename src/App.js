@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import AqiDetail from './components/AqiDetail';
 import PageNotFound from './pages/PageNotFound';
 import logoIcon from './assets/logoIcon.png';
+import Aqi from './pages/Aqi';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="/AqiDetail" element={<AqiDetail />} />
+        <Route path="/Aqi" element={<Aqi />} />
         <Route path="/PageNotFound" element={<PageNotFound />} />
       </Routes>
     </div>

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { resetState } from '../redux/airquality/airquality';
 
-const AqiDetail = (props) => {
+const Aqi = (props) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { aqiData, error } = props;
@@ -19,11 +19,11 @@ const AqiDetail = (props) => {
   );
 };
 
-AqiDetail.defaultProps = {
+Aqi.defaultProps = {
   aqiData: null,
   error: null,
 };
-AqiDetail.propTypes = {
+Aqi.propTypes = {
   aqiData: PropTypes.objectOf(PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.object,
@@ -31,4 +31,4 @@ AqiDetail.propTypes = {
   ]).isRequired),
   error: PropTypes.string,
 };
-export default AqiDetail;
+export default Aqi;
