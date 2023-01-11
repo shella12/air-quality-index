@@ -10,12 +10,12 @@ const AqiDetail = () => {
   const dispatch = useNavigate();
   const aqiData = useSelector((state) => state.AqiSlice.aqi);
   const location = useSelector((state) => state.LocationSlice);
-  const coordinates = `\u00A0\u00A0\u00A0\u00A0${aqiData.coord.lat}°,\u00A0\u00A0\u00A0\u00A0${aqiData.coord.lon}°`;
-  const locationName = location[0].name ? location[0].name : 'Not found';
-  const locationState = location[0].state;
-  const { country } = location[0];
-  const { components } = aqiData.list[0];
-  const { aqi } = aqiData.list[0].main;
+  const coordinates = aqiData ? `\u00A0\u00A0\u00A0\u00A0${aqiData.coord.lat}°,\u00A0\u00A0\u00A0\u00A0${aqiData.coord.lon}°` : 'Not found';
+  const locationName = location ? location[0].name : 'Not found';
+  const locationState = location ? location[0].state : 'Not found';
+  const { country } = location ? location[0] : 'Not found';
+  const { components } = aqiData ? aqiData.list[0] : 'Not found';
+  const { aqi } = aqiData ? aqiData.list[0].main : 'Not found';
   const onClickHandler = () => {
     dispatch(resetState());
     navigate('/', { state: { message: 'Reset page' } });

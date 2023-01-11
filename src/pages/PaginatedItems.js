@@ -33,7 +33,8 @@ const PaginatedItems = (props) => {
         breakLabel="..."
         nextLabel="next >"
         onPageChange={handlePageClick}
-        pageRangeDisplayed={6}
+        pageRangeDisplayed={5}
+        marginPagesDisplayed={2}
         pageCount={pageCount}
         previousLabel="< previous"
         activeClassName="active"
