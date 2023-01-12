@@ -18,7 +18,6 @@ const CitiesSlice = createSlice({
   reducers: {
     filterCities: (state, action) => {
       const filterStr = (action.payload).charAt(0).toUpperCase() + (action.payload).slice(1);
-      console.log(state.filterCities);
       return ({
         ...state,
         filterCities: state.cities.filter((city) => city.startsWith(filterStr)),
