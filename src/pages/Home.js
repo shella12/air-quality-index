@@ -22,7 +22,7 @@ const Home = () => {
         aqiData={aqiData}
         error={error}
       />
-      <PaginatedItems itemsPerPage={100} inputLocation={inputLocation} />
+      <PaginatedItems itemsPerPage={70} inputLocation={inputLocation} />
     </div>
   );
 };
