@@ -215,7 +215,7 @@ th,tbody tr:nth-child(even) {
   color: var(--witting-blue);
 }
 
-.pagination li {
+.pagination li a{
   border: 1px solid var(--witting-blue);
   padding: 0.4rem 1rem;
   cursor: pointer;

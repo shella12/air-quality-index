@@ -4,7 +4,6 @@ import Aqi from './Aqi';
 import AqiInput from '../components/AqiInput';
 import { getLocation } from '../redux/getLocation/getLocation';
 import getCities from '../APIs/cities';
-import PaginatedItems from './PaginatedItems';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -22,7 +21,6 @@ const Home = () => {
         aqiData={aqiData}
         error={error}
       />
-      <PaginatedItems itemsPerPage={100} inputLocation={inputLocation} />
     </div>
   );
 };

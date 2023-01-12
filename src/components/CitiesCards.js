@@ -15,8 +15,11 @@ const CitiesCards = (props) => {
   );
 };
 
+CitiesCards.defaultProps = {
+  cities: null,
+};
 CitiesCards.propTypes = {
-  cities: PropTypes.arrayOf(PropTypes.string).isRequired,
+  cities: PropTypes.arrayOf(PropTypes.string),
   inputLocation: PropTypes.func.isRequired,
 };
 export default CitiesCards;
