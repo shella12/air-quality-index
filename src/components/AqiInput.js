@@ -2,10 +2,12 @@ import { useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import { PropTypes } from 'prop-types';
 import { usePlacesWidget } from 'react-google-autocomplete';
-import PaginatedItems from '../pages/PaginatedItems';
+import { useDispatch } from 'react-redux';
+import { filterCities } from '../redux/cities/cities';
 
 const InputLocation = (props) => {
   const { inputLocation } = props;
+  const dispatch = useDispatch();
   const [location, setlocation] = useState('');
   const { ref } = usePlacesWidget({
     apiKey: 'AIzaSyDYYRY4MTwwz70HfxEEuAVOThkMtnfGBbQ',
@@ -22,6 +24,10 @@ const InputLocation = (props) => {
       alert('Please enter input');
     }
   };
+  const onChangeHandler = (event) => {
+    setlocation(event.target.value);
+    dispatch(filterCities(location));
+  };
   return (
     <div>
       <form className="form-container">
@@ -31,14 +37,13 @@ const InputLocation = (props) => {
           type="text"
           placeholder="Enter location..."
           value={location}
-          onChange={(e) => setlocation(e.target.value)}
+          onChange={(e) => onChangeHandler(e)}
           onSelect={(e) => setlocation(e.target.value)}
         />
         <button className="input-submit" type="submit" onClick={(e) => onClickHandler(e)}>
           <FiSearch style={{ color: '#0290ff', fontSize: '1.6rem' }} />
         </button>
       </form>
-      <PaginatedItems itemsPerPage={100} inputLocation={inputLocation} filterValue={location} />
     </div>
   );
 };

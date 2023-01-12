@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 import { PropTypes } from 'prop-types';
+import { useSelector } from 'react-redux';
 import CitiesCards from '../components/CitiesCards';
-import getCities from '../APIs/cities';
 
 const PaginatedItems = (props) => {
-  const { itemsPerPage, inputLocation, filterValue } = props;
-  const cities = getCities(filterValue);
+  const { itemsPerPage, inputLocation } = props;
+  const cities = useSelector((state) => state.CitiesSlice.cities);
   const [currentCities, setCurrentCities] = useState(null);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
@@ -41,13 +41,9 @@ const PaginatedItems = (props) => {
   );
 };
 
-PaginatedItems.defaultProps = {
-  filterValue: null,
-};
 PaginatedItems.propTypes = {
   itemsPerPage: PropTypes.number.isRequired,
   inputLocation: PropTypes.func.isRequired,
-  filterValue: PropTypes.string,
 };
 
 export default PaginatedItems;
