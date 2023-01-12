@@ -4,6 +4,7 @@ import getCitiesApi from '../../APIs/cities';
 const GET_CITIES = 'air-quality-index/cities/GET_CITIES';
 const initialState = {
   cities: [],
+  filterCities: [],
 };
 
 export const getCities = createAsyncThunk(GET_CITIES, async () => {
@@ -17,9 +18,10 @@ const CitiesSlice = createSlice({
   reducers: {
     filterCities: (state, action) => {
       const filterStr = (action.payload).charAt(0).toUpperCase() + (action.payload).slice(1);
+      console.log(state.filterCities);
       return ({
         ...state,
-        cities: state.cities.filter((city) => city.startsWith(filterStr)),
+        filterCities: state.cities.filter((city) => city.startsWith(filterStr)),
       });
     },
   },
@@ -27,6 +29,7 @@ const CitiesSlice = createSlice({
     builder.addCase(getCities.fulfilled, (state, action) => ({
       ...state,
       cities: action.payload,
+      filterCities: action.payload,
     }));
   },
 

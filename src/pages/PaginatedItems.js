@@ -6,7 +6,7 @@ import CitiesCards from '../components/CitiesCards';
 
 const PaginatedItems = (props) => {
   const { itemsPerPage, inputLocation } = props;
-  const cities = useSelector((state) => state.CitiesSlice.cities);
+  const cities = useSelector((state) => state.CitiesSlice.filterCities);
   const [currentCities, setCurrentCities] = useState(null);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);

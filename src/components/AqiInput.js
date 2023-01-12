@@ -38,7 +38,7 @@ const InputLocation = (props) => {
           placeholder="Enter location..."
           value={location}
           onChange={(e) => onChangeHandler(e)}
-          onSelect={(e) => setlocation(e.target.value)}
+          onSelect={(e) => onChangeHandler(e)}
         />
         <button className="input-submit" type="submit" onClick={(e) => onClickHandler(e)}>
           <FiSearch style={{ color: '#0290ff', fontSize: '1.6rem' }} />
