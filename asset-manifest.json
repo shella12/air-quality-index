@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/air-quality-index/static/css/main.67894a3b.css",
-    "main.js": "/air-quality-index/static/js/main.c4857075.js",
+    "main.js": "/air-quality-index/static/js/main.a703809f.js",
     "static/media/blueLogoBg.jpg": "/air-quality-index/static/media/blueLogoBg.22e0b1d12b8123520511.jpg",
     "index.html": "/air-quality-index/index.html",
     "main.67894a3b.css.map": "/air-quality-index/static/css/main.67894a3b.css.map",
-    "main.c4857075.js.map": "/air-quality-index/static/js/main.c4857075.js.map"
+    "main.a703809f.js.map": "/air-quality-index/static/js/main.a703809f.js.map"
   },
   "entrypoints": [
     "static/css/main.67894a3b.css",
-    "static/js/main.c4857075.js"
+    "static/js/main.a703809f.js"
   ]
 }
