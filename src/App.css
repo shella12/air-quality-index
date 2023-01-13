@@ -38,6 +38,10 @@ a {
   padding: 2rem 3rem;
 }
 
+.hamburger {
+  display: none;
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -60,13 +64,6 @@ a {
 
 .logo-image {
   height: 2.5rem;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
 }
 
 nav a {
@@ -209,6 +206,7 @@ tbody tr:nth-child(even) {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin-top: 2rem;
   color: var(--witting-blue);
@@ -278,6 +276,11 @@ tbody tr:nth-child(even) {
 }
 
 @media only screen and (max-width: 746px) {
+  header {
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
   .city-list {
     row-gap: 0;
   }
@@ -301,5 +304,14 @@ tbody tr:nth-child(even) {
   .heading1 {
     display: block;
     margin-right: 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .home {
+    display: none;
   }
 }

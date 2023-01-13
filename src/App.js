@@ -1,5 +1,6 @@
 import './App.css';
 import { Link, Route, Routes } from 'react-router-dom';
+import { HiOutlineMenu } from 'react-icons/hi';
 import Home from './pages/Home';
 import AqiDetail from './components/AqiDetail';
 import PageNotFound from './pages/PageNotFound';
@@ -15,7 +16,8 @@ function App() {
           <h1 className="logo-heading">irQualityIndex</h1>
         </div>
         <nav>
-          <Link to="/">Home</Link>
+          <HiOutlineMenu className="hamburger" style={{ fontSize: '2rem', color: '#b3e1ef' }} />
+          <Link className="home" to="/">Home</Link>
         </nav>
       </header>
       <Routes>
