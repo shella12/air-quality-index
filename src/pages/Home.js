@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
 import { getAqi } from '../redux/airquality/airquality';
 import Aqi from './Aqi';
 import AqiInput from '../components/AqiInput';
@@ -14,7 +15,9 @@ const Home = () => {
     dispatch(getAqi(location));
     dispatch(getLocation(location));
   };
-  dispatch(getCities());
+  useEffect(() => {
+    dispatch(getCities());
+  });
   return (
     <div>
       <AqiInput inputLocation={inputLocation} />
