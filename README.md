@@ -3,7 +3,7 @@
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 Air Quality WorldWide](#about-project)
   - [🛠 Built With](#built-with)
-  - [🚀 Live Demo ](#-live-demo-)
+  <!-- - [🚀 Live Demo ](#-live-demo-) -->
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -48,15 +48,15 @@ Main features:
 - **Detailed prooprtions of air particles**
 - **Air quality check**
 
-[Click](https://www.loom.com/share/22c2429f73804baa9189896e80ec091d) to see video of features in detail
+[Click](https://www.loom.com/share/a1bb258b03d14ecf8fbffed94ea87a92) to see video of features in detail
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+<!-- ## 🚀 Live Demo <a name="live-demo"></a>
 
->  click here to see the [Live Demo](https://shella12.github.io/pollutionCheck/)
+<!-- >  click here to see the [Live Demo](https://shella12.github.io/air-quality-index/) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
