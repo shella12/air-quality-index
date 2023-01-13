@@ -3,7 +3,7 @@
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 Air Quality WorldWide](#about-project)
   - [🛠 Built With](#built-with)
-  - [🚀 Live Demo ](#-live-demo-)
+  <!-- - [🚀 Live Demo ](#-live-demo-) -->
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -54,9 +54,9 @@ Main features:
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+<!-- ## 🚀 Live Demo <a name="live-demo"></a>
 
->  click here to see the [Live Demo](https://shella12.github.io/air-quality-index/)
+<!-- >  click here to see the [Live Demo](https://shella12.github.io/air-quality-index/) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
