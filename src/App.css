@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Lato:wght@500&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
 :root {
   --dark-blue: #306fb4;
   --witting-blue: #b3e1ef;
   --blue: #5590c7;
   --off-white: #f4f2f4;
-  --light-grey: #d3d3d3;
+  --border-blue: #3c5386;
   --grey: #4b4c4e;
   --font-main-heading: 'Dela Gothic One', cursive;
   --font-heading: 'Nanum Gothic';
@@ -231,7 +232,7 @@ tbody tr:nth-child(even) {
   align-items: center;
   gap: 1rem;
   padding: 1rem 1rem 4rem 1rem;
-  border: 1px solid var(--off-white);
+  border: 1px solid var(--border-blue);
   background-color: var(--blue);
   box-shadow: 4px 5px 10px 0 rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 4px 5px 10px 0 rgba(0, 0, 0, 0.75);
@@ -278,17 +279,23 @@ tbody tr:nth-child(even) {
 
 @media only screen and (max-width: 746px) {
   .city-list {
-    row-gap: 1rem;
+    row-gap: 0;
   }
 
-  .city-list .card-img, .heading2 {
+  .city-list .card-img,
+  .heading2 {
     display: none;
   }
 
   .city-list .card {
     flex-direction: row;
     justify-content: space-between;
-    border-radius: 10px;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .card:nth-child(even) {
+    background-color: var(--dark-blue);
   }
 
   .heading1 {
