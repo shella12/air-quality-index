@@ -280,7 +280,7 @@ tbody tr:nth-child(even) {
     justify-content: space-between;
     gap: 1rem;
   }
-  
+
   .city-list {
     row-gap: 0;
   }
