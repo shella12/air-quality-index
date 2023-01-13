@@ -15,9 +15,9 @@ const CitiesCards = (props) => {
                 <Link to="/" onClick={() => inputLocation(city)}><BsArrowRightCircle style={{ color: '#b3e1ef', fontSize: '1.5rem' }} /></Link>
                 <div
                   className="card-img"
-                  style={{ backgroundImage: `url(${cityImges[(Math.floor(Math.random() * 10) + 1)]})` }}
+                  style={{ backgroundImage: `url(${cityImges[(Math.floor(Math.random() * 10))]})` }}
                 >
-                  <img src={cityImges[(Math.floor(Math.random() * 10) + 1)]} alt="cityImg" />
+                  <img src={cityImges[(Math.floor(Math.random() * 10))]} alt="cityImg" />
                 </div>
                 <h1 className="heading2">{city}</h1>
               </div>
