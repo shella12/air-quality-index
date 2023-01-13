@@ -25,7 +25,7 @@ const Home = () => {
         aqiData={aqiData}
         error={error}
       />
-      <PaginatedItems itemsPerPage={70} inputLocation={inputLocation} />
+      <PaginatedItems itemsPerPage={24} inputLocation={inputLocation} />
     </div>
   );
 };
