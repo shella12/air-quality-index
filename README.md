@@ -56,7 +56,7 @@ Main features:
 
 <!-- ## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- >  click here to see the [Live Demo](https://shella12.github.io/air-quality-index/) -->
+<!-- >  click here to see the [Live Demo](https://lighthearted-blancmange-f8080f.netlify.app/) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
