@@ -54,9 +54,9 @@ Main features:
 
 <!-- LIVE DEMO -->
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- >  click here to see the [Live Demo](https://lighthearted-blancmange-f8080f.netlify.app/) -->
+click here to see the [Live Demo](https://lighthearted-blancmange-f8080f.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
